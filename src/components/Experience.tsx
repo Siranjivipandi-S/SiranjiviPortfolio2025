@@ -128,7 +128,7 @@ export const Experience = () => {
                           <h4 className="font-medium text-foreground">
                             {role.title}
                           </h4>
-                          {idx === 1 && (
+                          {idx === 0 && (
                             <span className="text-xs bg-primary/20 text-primary rounded-full px-2 py-0.5 font-semibold">
                               Promoted
                             </span>

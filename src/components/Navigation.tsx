@@ -151,6 +151,20 @@ export const Navigation = () => {
       },
     },
   };
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const staggerItem = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.4, ease: "easeOut" },
+  };
 
   return (
     <div className="flex items-center justify-center">
@@ -313,93 +327,106 @@ export const Navigation = () => {
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
               <motion.div
-                variants={hireMeVariants}
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0 8px 25px -8px rgba(0, 0, 0, 0.3)",
+                  boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2 }}
               >
-                <Button
-                  size="sm"
-                  className={`ml-2 h-8 ${
-                    isMobile ? "px-3 text-xs" : "px-4"
-                  } rounded-full bg-primary text-primary-foreground relative overflow-hidden`}
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                    initial={{ x: "-100%" }}
-                    animate={{ x: "100%" }}
-                    transition={{
-                      delay: 1.2,
-                      duration: 0.8,
-                      ease: "easeInOut",
-                    }}
-                  />
+                <Button size="lg" className="rounded-full w-full sm:w-auto">
                   <motion.span
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.9 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 0.3 }}
                   >
                     Hire Me
                   </motion.span>
                 </Button>
               </motion.div>
             </DialogTrigger>
-            <DialogContent className="w-full max-w-sm sm:max-w-md rounded-2xl bg-white dark:bg-gray-800 p-4 sm:p-6 shadow-xl">
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
-                  Contact Me
-                </DialogTitle>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Ready to build impactful solutions? Let's connect.
-                </p>
-              </DialogHeader>
-              <form className="space-y-5" onSubmit={handleSubmit}>
-                <Input
-                  placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className={`rounded-lg border transition focus:ring-2 ${
-                    nameError
-                      ? "border-red-600 focus:border-red-600 focus:ring-red-300"
-                      : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
-                  }`}
-                />
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className={`rounded-lg border transition focus:ring-2 ${
-                    emailError
-                      ? "border-red-600 focus:border-red-600 focus:ring-red-300"
-                      : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
-                  }`}
-                />
-                <div>
-                  <Textarea
-                    placeholder="Your Message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    rows={4}
-                    className={`rounded-lg border resize-none transition focus:ring-2 ${
-                      messageError
-                        ? "border-red-600 focus:border-red-600 focus:ring-red-300"
-                        : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
-                    }`}
-                  />
-                  <p className="text-xs text-gray-400 mt-1">
-                    Share details so I can help you better
+
+            <DialogContent className="max-w-md rounded-2xl bg-white dark:bg-gray-800 p-6 shadow-xl">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                    Contact Me
+                  </DialogTitle>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    Ready to build impactful solutions? Let's connect.
                   </p>
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-black text-white rounded-full shadow-md transition duration-300"
+                </DialogHeader>
+
+                <motion.div
+                  className="space-y-5 mt-4"
+                  initial="initial"
+                  animate="animate"
+                  variants={staggerContainer}
                 >
-                  Send Message
-                </Button>
-              </form>
+                  <motion.div variants={staggerItem}>
+                    <Input
+                      placeholder="Your Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className={`rounded-lg border transition focus:ring-2 ${
+                        nameError
+                          ? "border-red-600 focus:border-red-600 focus:ring-red-300"
+                          : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
+                      }`}
+                    />
+                  </motion.div>
+
+                  <motion.div variants={staggerItem}>
+                    <Input
+                      type="email"
+                      placeholder="Your Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className={`rounded-lg border transition focus:ring-2 ${
+                        emailError
+                          ? "border-red-600 focus:border-red-600 focus:ring-red-300"
+                          : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
+                      }`}
+                    />
+                  </motion.div>
+
+                  <motion.div variants={staggerItem}>
+                    <Textarea
+                      placeholder="Your Message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      rows={4}
+                      className={`rounded-lg border resize-none transition focus:ring-2 ${
+                        messageError
+                          ? "border-red-600 focus:border-red-600 focus:ring-red-300"
+                          : "border-gray-300 focus:border-blue-500 focus:ring-blue-300"
+                      }`}
+                    />
+                    <p className="text-xs text-gray-400 mt-1">
+                      Share details so I can help you better
+                    </p>
+                  </motion.div>
+
+                  <motion.div variants={staggerItem}>
+                    <motion.div
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Button
+                        onClick={handleSubmit}
+                        className="w-full bg-black hover:bg-gray-900 text-white rounded-full shadow-md transition duration-300"
+                      >
+                        Send Message
+                      </Button>
+                    </motion.div>
+                  </motion.div>
+                </motion.div>
+              </motion.div>
             </DialogContent>
           </Dialog>
         </motion.div>
