@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { Mail, Phone, Linkedin, Check } from "lucide-react";
-import profileAvatar from "@/assets/Avatar.jpg";
+import profileAvatar from "@/assets/sideviewabout.jpg";
 import { useState, useRef, useEffect } from "react";
 
 // Animation variants
