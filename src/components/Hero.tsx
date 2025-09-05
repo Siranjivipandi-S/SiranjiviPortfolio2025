@@ -415,7 +415,7 @@ export const Hero = () => {
                 whileHover={{
                   scale: 1.05,
                   rotate: 2,
-                  boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.15)",
+                  // boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.15)",
                 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 className="relative"
