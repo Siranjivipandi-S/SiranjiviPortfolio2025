@@ -39,7 +39,6 @@ Built with a strong focus on performance, clean UI, accessibility, and smooth an
 ### ☁️ Deployment & Hosting
 
 - **Netlify** – Frontend hosting with CI/CD
-- **AWS Amplify** – Cloud hosting and build automation
 - **GitHub** – Source code management and version control
 
 ---
