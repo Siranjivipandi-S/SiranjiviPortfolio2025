@@ -151,7 +151,7 @@ export const About = () => {
                 }
                 transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
               >
-                Full Stack Developer
+                Frontend Engineer
               </motion.span>
             </motion.h3>
 
@@ -159,28 +159,31 @@ export const About = () => {
               className="text-muted-foreground mb-4 leading-relaxed"
               variants={staggerItem}
             >
-              I'm Siranjivipandi S, a Full Stack Developer from Madurai with
-              strong skills in MERN stack, Spring Boot, and DevOps. I've
-              completed my MCA and B.Sc. Computer Science and have hands-on
-              experience through a 3-month MERN internship and 6 months as a
-              Trainee SDE.
+              I'm Siranjivipandi S, a Frontend Engineer from Madurai, India,
+              focused on building fast, scalable, and user-friendly web
+              interfaces. I hold an MCA and a B.Sc. in Computer Science, and I
+              bring hands-on experience from both internships and professional
+              roles in real-world product development.
             </motion.p>
 
             <motion.p
               className="text-muted-foreground leading-relaxed mb-6"
               variants={staggerItem}
             >
-              I'm currently working as an{" "}
+              I'm currently working as a{" "}
               <motion.span
                 className="text-foreground font-medium"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Associate Software Development Engineer at Pravyuha Tech
-                Solutions
+                Member of Technical Staff – I (Frontend Engineer)
               </motion.span>
-              , building scalable web applications and continuously learning to
-              deliver better solutions.
+              , where I specialize in building modern web applications using{" "}
+              <span className="text-foreground font-medium">
+                React, Next.js, and Astro
+              </span>
+              , with a strong focus on performance, accessibility, and clean UI
+              architecture.
             </motion.p>
 
             {/* Contact Details */}
@@ -377,7 +380,7 @@ export const About = () => {
             {
               title: "Summary",
               content:
-                "MCA, B.Sc. CS, MERN Internship (3 mo), Trainee SDE (6 mo), now Associate SDE",
+                "Frontend Engineer (MTS-I), React • Next.js • Astro, MCA, B.Sc. CS",
             },
           ].map((item, index) => (
             <motion.div

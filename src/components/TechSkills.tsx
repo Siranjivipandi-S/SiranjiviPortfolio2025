@@ -66,29 +66,40 @@ export const TechSkills = () => {
 
     return () => observer.disconnect();
   }, []);
-
   const frontendSkills = [
+    "Astro",
     "Next.js",
     "React.js",
-    "Redux",
     "Tailwind CSS",
+    "Redux",
+    "Zustand",
     "JavaScript",
-    "Bootstrap",
     "HTML5",
     "CSS3",
+    "Bootstrap",
   ];
 
   const backendSkills = [
     "Node.js",
     "Express.js",
+    "NestJS",
+    "GraphQL",
     "Java",
     "Spring Boot",
     "PHP",
-    "NestJS",
     "Prisma",
+    "Strapi",
   ];
 
-  const databaseAndCloud = ["MongoDB", "MySQL", "Firebase", "AWS", "Docker"];
+  const databaseAndCloud = [
+    "MongoDB",
+    "MySQL",
+    "Firebase",
+    "AWS",
+    "AWS Amplify",
+    "Docker",
+    "Netlify",
+  ];
 
   const toolsAndOthers = [
     "Git",
@@ -187,7 +198,7 @@ export const TechSkills = () => {
               variant="secondary"
               className={`text-xs transition-all duration-200 hover:bg-gradient-to-r hover:${getCategoryColor(
                 title
-              )} hover:text-black/90 hover:border-transparent`}
+              )} hover:border-transparent`}
             >
               <motion.span
                 initial={{ opacity: 0 }}

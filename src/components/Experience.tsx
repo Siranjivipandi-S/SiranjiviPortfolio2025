@@ -5,77 +5,92 @@ import { motion } from "framer-motion";
 export const Experience = () => {
   const experiences = [
     {
+      company: "AntStack",
+      location: "Banglore, India",
+      roles: [
+        {
+          title: "Member of Technical Staff – I (Frontend Engineer)",
+          period: "Dec 2025 – Present",
+          description: [
+            "Building high-performance, scalable frontend applications using React, Next.js, and Astro.",
+            "Developing SEO-friendly and component-driven UI architectures with a strong focus on performance and accessibility.",
+            "Integrated headless CMS solutions using Strapi and GraphQL for dynamic content management.",
+            "Deployed and managed frontend applications using Netlify and AWS Amplify with CI/CD pipelines.",
+            "Collaborating closely with backend, design, and product teams to deliver production-ready features.",
+          ],
+          skills: [
+            "React.js",
+            "Next.js",
+            "Astro",
+            "GraphQL",
+            "Strapi",
+            "Netlify",
+            "AWS Amplify",
+            "Frontend Performance",
+          ],
+        },
+      ],
+    },
+    {
       company: "PraVyuha Tech Solutions LLP",
       location: "Chennai, India",
       roles: [
         {
-          title: "Associate Software Engineer",
-          period: "Jul 2025 – Present",
+          title: "Associate Software Development Engineer",
+          period: "Jan 2025 – Dec 2025",
           description: [
-            "Promoted to Associate Engineer within 6 months for exceptional technical contributions and leadership.",
-            "Built scalable apps with React.js, Redux, and Spring Boot, handled critical production issues, ensuring stability, quick resolutions, and minimal downtime.",
-            "Optimized performance and load times through strategic refactoring, achieving up to 35% improvement in application speed.",
+            "Promoted to Associate SDE within 6 months for strong technical contributions and ownership.",
+            "Built and maintained scalable web applications using React.js, Redux, and Spring Boot.",
+            "Handled critical production issues, ensuring application stability and quick resolutions.",
+            "Designed interactive dashboards and developed POCs for dynamic report generation.",
+            "Optimized frontend performance through refactoring, achieving up to 35% faster load times.",
           ],
           skills: [
             "React.js",
             "Redux",
             "Spring Boot",
-            "Performance Optimization",
-            "Production Issue Handling",
-          ],
-        },
-        {
-          title: "Trainee Software Development Engineer",
-          period: "Jan 2025 – Jun 2025",
-          description: [
-            "Handled bug fixes and contributed to the development of complex modules.",
-            "Designed and implemented multiple interactive dashboards for data visualization. Learned and applied Spring Boot for backend service integration.",
-            "Created a POC for dynamic report generation on the front end while collaborating with cross-functional teams to ensure high-quality solution delivery.",
-          ],
-          skills: [
-            "Bug Fixes",
-            "Dashboard Design",
-            "Spring Boot",
-            "POC Development",
+            "Frontend Performance Optimization",
+            "Production Support",
+            "Dashboard Development",
             "Cross-functional Collaboration",
           ],
         },
       ],
     },
     {
-      title: "MERN Stack Developer - Intern",
+      title: "MERN Stack Developer – Intern",
       company: "DSR Groups of Companies",
       location: "Remote",
       period: "Jun 2024 – Sep 2024",
       description: [
-        "Spearheaded development of two live MERN stack applications, earning 95% positive client feedback.",
-        "Engineered robust, scalable CRUD APIs handling 1,000+ daily transactions with high reliability.",
-        "Boosted mobile user retention by 60% through optimized, responsive UI using Tailwind CSS.",
+        "Developed two live MERN stack applications with high client satisfaction.",
+        "Built scalable REST APIs handling 1,000+ daily transactions.",
+        "Improved mobile user engagement through responsive UI with Tailwind CSS.",
       ],
       skills: [
-        "MERN Stack",
-        "API Development",
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
         "Tailwind CSS",
-        "Client Feedback",
-        "Mobile Optimization",
+        "API Development",
       ],
     },
     {
-      title: "Full Stack Developer - Intern",
+      title: "Full Stack Developer – Intern",
       company: "Calanjiyam Consultancies and Technologies",
       location: "Remote",
       period: "Jul 2024 – Sep 2024",
       description: [
-        "Built a MERN stack-based quotation management app.",
-        "Led a small dev team, handled frontend and backend development, and delivered functional, tested modules.",
+        "Built a MERN-based quotation management system.",
+        "Led a small team and delivered fully tested frontend and backend modules.",
       ],
       skills: [
         "React.js",
         "Node.js",
         "MongoDB",
-        "Team Leadership",
-        "Mongoose",
         "REST APIs",
+        "Team Leadership",
       ],
     },
   ];
@@ -128,11 +143,11 @@ export const Experience = () => {
                           <h4 className="font-medium text-foreground">
                             {role.title}
                           </h4>
-                          {idx === 0 && (
+                          {/* {idx === 1 && (
                             <span className="text-xs bg-primary/20 text-primary rounded-full px-2 py-0.5 font-semibold">
                               Promoted
                             </span>
-                          )}
+                          )} */}
                         </div>
                         <span className="text-sm text-muted-foreground">
                           {role.period}

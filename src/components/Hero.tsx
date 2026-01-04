@@ -159,9 +159,9 @@ export const Hero = () => {
                 className="text-xs sm:text-sm text-muted-foreground font-medium"
                 variants={fadeInDown}
               >
-                Associate Software Engineer
+                Frontend Engineer
               </motion.span>
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.4, ease: "easeOut" }}
@@ -178,7 +178,7 @@ export const Hero = () => {
                     AVAILABLE FOR WORK
                   </motion.span>
                 </Badge>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
 
             {/* Name */}
@@ -214,17 +214,23 @@ export const Hero = () => {
               animate="animate"
               transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
             >
-              Passionate Full Stack Developer from Madurai, India with 1 year of
-              coding experience. Currently building scalable web solutions at{" "}
+              Passionate Frontend Engineer from Madurai, India with 1+ year of
+              professional experience in building modern, scalable web
+              applications. Currently working as a{" "}
+              <span className="text-foreground font-medium">
+                Member of Technical Staff – I
+              </span>{" "}
+              at{" "}
               <motion.span
                 className="text-foreground font-medium"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                Pravyuha Tech Solutions
+                AntStack
               </motion.span>
-              . Skilled in MERN stack, Spring Boot, and DevOps tools like Docker
-              and AWS.
+              . Proficient in React, Next.js, Astro, modern JavaScript, UI
+              performance optimization, and collaborating closely with backend
+              and product teams.
             </motion.p>
 
             {/* Quick Highlight */}
