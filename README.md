@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# 🌐 Developer Portfolio
 
-## Project info
+A modern, responsive developer portfolio showcasing my skills, experience, and projects as a **Frontend Engineer**.  
+Built with a strong focus on performance, clean UI, accessibility, and smooth animations.
 
-**URL**: https://lovable.dev/projects/765ce75b-0b6a-4557-ab0c-7214a5a815d4
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- ⚡ Fast and responsive user interface
+- 🎨 Clean, modern UI with smooth animations
+- 🧩 Modular and reusable React components
+- 📱 Fully responsive across all devices
+- 📌 Well-structured sections (About, Skills, Experience, Projects, Contact)
+- 🚀 Optimized for performance and best practices
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/765ce75b-0b6a-4557-ab0c-7214a5a815d4) and start prompting.
+## 🛠 Tech Stack & Why It’s Used
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🎨 Frontend
 
-**Use your preferred IDE**
+- **React.js** – Component-based architecture for scalable UI
+- **Vite** – Fast development server and optimized production builds
+- **TypeScript** – Type safety and improved maintainability
+- **Tailwind CSS** – Utility-first styling for responsive design
+- **Shadcn UI** – Accessible and customizable UI components
+- **Framer Motion** – Animations and interactive UI transitions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🎥 Animations & UX
 
-Follow these steps:
+- **Framer Motion** – Scroll-based animations, hover effects, and transitions
+- **Intersection Observer API** – Trigger animations on scroll for better user experience
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ☁️ Deployment & Hosting
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Netlify** – Frontend hosting with CI/CD
+- **AWS Amplify** – Cloud hosting and build automation
+- **GitHub** – Source code management and version control
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+### 🧰 Tools & Utilities
+
+- **Git & GitHub** – Version control and collaboration
+- **VS Code** – Development environment
+- **Figma** – UI/UX design reference
+- **Postman** – API testing during development
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/        # Reusable UI components
+├── sections/          # Portfolio sections (About, Skills, Experience, Projects)
+├── assets/            # Images, icons, and static files
+├── hooks/             # Custom React hooks
+├── styles/            # Global and utility styles
+└── main.tsx           # Application entry point
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/765ce75b-0b6a-4557-ab0c-7214a5a815d4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
